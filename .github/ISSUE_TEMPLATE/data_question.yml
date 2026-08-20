@@ -1,0 +1,47 @@
+name: 📊 Data Question
+description: Ask about specific loci, cell types, scores, or how to interpret results in Perseus
+title: "[Data]: "
+labels: ["data-question"]
+body:
+  - type: input
+    id: locus
+    attributes:
+      label: Gene / locus / variant of interest
+      placeholder: "e.g. GLP1R, rs...,  chr13:..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: celltype
+    attributes:
+      label: Cell type (if applicable)
+      options:
+        - Alpha
+        - Beta
+        - Gamma
+        - Delta
+        - Ductal
+        - MUC5B_Ductal
+        - Acinar
+        - Active Stellate
+        - Quiescent Stellate
+        - Endothelial
+        - Immune
+        - Schwann
+        - Not applicable / multiple
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What are you trying to understand about this locus/score/track?
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: sensitive-data
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have not included any unpublished data or donor-identifiable information
+          required: true
