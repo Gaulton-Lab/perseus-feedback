@@ -10,7 +10,17 @@ body:
       description: What are you trying to do that Perseus currently makes hard or impossible?
     validations:
       required: true
-
+  - type: dropdown
+    id: app
+    attributes:
+      label: Which application is this about?
+      options:
+        - Perseus
+        - CFRD Genomics
+        - Liver Genomics
+        - Other (please specify in description)
+    validations:
+      required: true
   - type: textarea
     id: solution
     attributes:
