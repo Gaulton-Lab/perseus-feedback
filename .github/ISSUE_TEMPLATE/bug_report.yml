@@ -7,7 +7,17 @@ body:
     attributes:
       value: |
         Thanks for taking the time to report a bug! Please fill out as much detail as you can.
-
+  - type: dropdown
+    id: app
+    attributes:
+      label: Which application is this about?
+      options:
+        - Perseus
+        - CFRD Genomics
+        - Liver Genomics
+        - Other (please specify in description)
+    validations:
+      required: true
   - type: input
     id: url
     attributes:
