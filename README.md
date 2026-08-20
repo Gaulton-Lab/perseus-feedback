@@ -1,8 +1,6 @@
 # Perseus Feedback
 
-Feedback and support for [Perseus](https://perseuskb.org) — the PanKbase
-pancreatic islet snATAC-seq atlas browser.
-
+Feedback and support for [Perseus](https://perseuskb.org)
 This repo does not contain Perseus source code. It's for bug reports,
 feature requests, and data questions only.
 
