@@ -10,7 +10,17 @@ body:
       placeholder: "e.g. GLP1R, rs...,  chr13:..."
     validations:
       required: true
-
+  - type: dropdown
+    id: app
+    attributes:
+      label: Which application is this about?
+      options:
+        - Perseus
+        - CFRD Genomics
+        - Liver Genomics
+        - Other (please specify in description)
+    validations:
+      required: true
   - type: dropdown
     id: celltype
     attributes:
